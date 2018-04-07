@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
 //connect to database
-mongoose.connect('mongodb://test:test@ds159493.mlab.com:59493/hamada-todo')
+mongoose.connect('mongodb://***:***@ds159493.mlab.com:59493/hamada-todo')
 
 //create a schema - this is like a blue print
 const todoSchema = new mongoose.Schema({
