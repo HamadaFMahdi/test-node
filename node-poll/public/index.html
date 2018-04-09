@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PusherPoll</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <style>
+    #vote-form p label span {
+      color: black;
+      font-weight: bold;
+    }
+    #chartContainer{
+      height: 300px;
+      width: 100%;
+    }
+    #vote{
+      color:white;
+    }
+    #vote:focus{
+      outline:0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>OS vote</h1>
+    <p>Vote for your favourite OS</p>
+    <form id="vote-form">
+       <p>
+         <label>
+           <input class="with-gap" name="os" type="radio" id="windows" value="Windows" />
+           <span>Windows</span>
+         </label>
+       </p>
+       <p>
+         <label>
+           <input class="with-gap" name="os" type="radio" id="macos" value="MacOS" />
+           <span>MacOS</span>
+         </label>
+       </p>
+       <p>
+         <label>
+           <input class="with-gap" name="os" type="radio" id="linux" value="Linux"  />
+           <span>Linux Distro</span>
+         </label>
+       </p>
+       <p>
+         <label>
+           <input class="with-gap" name="os" type="radio" id="other" value="Other" />
+           <span>Other</span>
+         </label>
+       </p>
+       <input id="vote" type="submit" value="Vote" class="waves-effect waves-black btn">
+   </form>
+
+   <br><br>
+
+   <div id="chartContainer">
+
+   </div>
+  </div>
+
+
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/4.2.2/pusher.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

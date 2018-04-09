@@ -1,0 +1,18 @@
+{
+  "name": "poll",
+  "version": "1.0.0",
+  "description": "polling app",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "hamada",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.13",
+    "pusher": "^1.5.1"
+  }
+}
