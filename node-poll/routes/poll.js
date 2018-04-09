@@ -5,9 +5,9 @@ const Pusher = require('pusher');
 const Vote = require('../models/Vote');
 
 var pusher = new Pusher({
-  appId: '505285',
-  key: '45d3604fa79ead7677dc',
-  secret: 'a676fc258601f47fdb84',
+  appId: '***',
+  key: '***',
+  secret: '***',
   cluster: 'eu',
   encrypted: true
 });

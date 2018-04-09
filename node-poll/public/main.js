@@ -52,9 +52,9 @@ fetch('http://localhost:3000/poll')
       });
       chart.render();
       // Enable pusher logging - don't include this in production
-      Pusher.logToConsole = true;
+      // Pusher.logToConsole = true;
 
-      const pusher = new Pusher('45d3604fa79ead7677dc', {
+      const pusher = new Pusher('***', {
         cluster: 'eu',
         encrypted: true
       });
